@@ -1,0 +1,343 @@
+@font-face { 
+    font-family: MyFont; 
+    src: url('Forum-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: MyFontBold; 
+    src: url('Thasadith-Bold.ttf'); 
+} 
+
+html {
+    overflow-y: scroll;
+}
+
+html, body {
+    height: 98%;
+}
+
+body {
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ), url('background.jpg');
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 100px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, .9);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    padding-right: 5px;
+}
+
+.logo-box {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    cursor: pointer;
+}
+
+
+.logo {
+    height: 64px;
+    width:64px;
+}
+
+.logo-text {
+    font-family: MyFont;
+    align-self: end;
+    margin-bottom: 0;
+    color: #464646;
+}
+
+.nav-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav-links a {
+    font-family: MyFont;
+    color: #464646;
+    font-size: 32px;
+}
+
+.nav-link {
+    padding: 16px;
+    border-radius: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+.content {
+    height: 100%;
+}
+
+.split-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.overview {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-family: MyFont;
+    font-size: 36px;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.overview-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 320px;
+    display: flex;
+    align-items: center;
+}
+
+.words {
+    width: 100%;
+    padding: 0 40px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overview p {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.overview h2 {
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.overview h3 {
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+.bullets {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    font-family: MyFont;
+    color: #ffffff;
+}
+
+.bullets p {
+    margin: 0 auto;
+    list-style: none;
+    font-size: 32px;
+    font-weight: 200;
+    padding-top: 16px;
+    padding-bottom: 12px;
+}
+
+.bullets h3 {
+    font-size: 64px;
+}
+
+.bullet-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    margin: 0 0;
+    border-color: black;
+}
+
+.index-hr {
+    border-color: white;
+}
+
+.summary {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*
+Menu
+*/
+
+.menu {
+    margin: 32px auto;
+    height: auto;
+    width: 50%;
+    background-color: beige;
+    padding: 20px;
+    font-family: MyFont;
+}
+
+.menu h2 {
+    font-size: 36px;
+    margin: 20px auto;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+
+.food-section-header {
+    text-align: center;
+}
+
+.food-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+/*
+Contact
+*/
+
+.content-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 550px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-header {
+    font-family: MyFont;
+    color: #ffffff;
+}
+
+.content-background h2 {
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-size: 64px;
+    margin-bottom: 15px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-grid p {
+    font-family: MyFont;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: white;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.content-grid h3 {
+    font-family: MyFont;
+    font-size: 36px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    color: white;
+}
+
+.location {
+    height: 400px;
+    width: 470px;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.hours {
+    font-size: 16px !important;
+    font-weight: 200 !important;
+    margin: 5px;
+}
+
+/*
+About
+*/
+
+.about-content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto 1fr;
+    row-gap: 10px;
+    grid-template-areas: 
+    "pic1 word1 word1"
+    "hr hr hr"
+    "word2 word2 pic2";
+    justify-items: center;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.about-content-grid p {
+    font-family: MyFont;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.about-hr {
+    grid-area: hr;
+    width: 80%;
+    border-color: white;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.word1 {
+    grid-area: word1;
+    text-align: left;
+}
+
+.word2 {
+    grid-area: word2;
+    text-align: left;
+}
+
+.food-pic {
+    height: 200px;
+    width: auto;
+}
+
+.pic1 {
+    grid-area: pic1;
+    justify-self: start;
+}
+
+.pic2 {
+    grid-area: pic2;
+    justify-self: end;
+}
